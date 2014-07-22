@@ -22,5 +22,5 @@ print record['/']['group1']['group2']['dataArray']
 
 There are also methods to access the contents of a group directly without following the hierarchy. e.g. if you want to check the contents hanging from group2, use method groupContents. 
 
-
+Check out my <a href="http://januverma.wordpress.com/2014/07/08/hdf5-to-json-converter-in-python/">blog</a> for a discussion on this class. 
 
