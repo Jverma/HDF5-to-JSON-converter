@@ -15,7 +15,8 @@ The JSON file the objects are accesed as --
 
 json_file = open('createdJSONfile.json')
 for line in json_file:
-  record = json.loads(line)
+record = json.loads(line)
+
 
 print record['/']['group1']['group2']['dataArray']
 
