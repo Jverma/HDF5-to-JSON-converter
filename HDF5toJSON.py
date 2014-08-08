@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 ## HDF5 to JSON converter
 ## Author - Janu Verma
 ## j.verma5@gmail.com
@@ -5,11 +6,21 @@
 ##############################################################################################
 import json
 import sys
-import numpy
-from tables import *
 from collections import defaultdict
 import re
 import io
+
+try:
+	import numpy
+except:
+	print "Error : Requires numpy"
+	sys.exit()
+
+try:
+	from tables import *
+except:
+	print "Error : Requires PyTables"
+	
 
 
 h5file = open_file(sys.argv[1])
